@@ -18,8 +18,9 @@ impl GameBoard {
             for j in 0..8 {
                 print!("{} ", self.board[i][j]);
             }
-            println!();
+            print!("{}\n", i);
         }
+        println!("0 1 2 3 4 5 6 7");
     }
 
     fn create_default_board() -> GameBoard {
@@ -95,13 +96,6 @@ fn main() {
         let to: i32 = to.trim().parse().expect("Please type a number!");
         gameboard.move_piece(from, to);
         gameboard.print_board();
-    }
-}
-
-fn game(gameboard: GameBoard) {
-    let mut turn = 1;
-    loop {
-        
     }
 }
 
