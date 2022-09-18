@@ -85,6 +85,7 @@ impl GameBoard {
             let mid_col = (from_col + to_col) / 2;
             self.board[mid_row as usize][mid_col as usize] = ' ';
         }
+
     }
 
     /// Checks whether the move is valid
